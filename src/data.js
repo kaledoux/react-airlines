@@ -876,16 +876,16 @@ const airports = [
 	{ code: 'YHZ', name: 'Halifax / Stanfield International Airport', lat: 44.8807983398, long: -63.5085983276 },
 	{ code: 'YMM', name: 'Fort McMurray Airport', lat: 56.653301239, long: -111.222000122 },
 	{
-		code: 'YOW',
-		name: 'Ottawa Macdonald-Cartier International Airport',
-		lat: 45.3224983215332,
-		long: -75.66919708251953
+		code : 'YOW',
+		name : 'Ottawa Macdonald-Cartier International Airport',
+		lat  : 45.3224983215332,
+		long : -75.66919708251953
 	},
 	{
-		code: 'YUL',
-		name: 'Montreal / Pierre Elliott Trudeau International Airport',
-		lat: 45.4706001282,
-		long: -73.7407989502
+		code : 'YUL',
+		name : 'Montreal / Pierre Elliott Trudeau International Airport',
+		lat  : 45.4706001282,
+		long : -73.7407989502
 	},
 	{ code: 'YVR', name: 'Vancouver International Airport', lat: 49.193901062, long: -123.183998108 },
 	{ code: 'YYC', name: 'Calgary International Airport', lat: 51.113899231, long: -114.019996643 },
@@ -952,10 +952,10 @@ const airports = [
 	{ code: 'POL', name: 'Pemba Airport', lat: -12.991762161254883, long: 40.52401351928711 },
 	{ code: 'SEZ', name: 'Seychelles International Airport', lat: -4.674339771270752, long: 55.52180099487305 },
 	{
-		code: 'BUQ',
-		name: 'Joshua Mqabuko Nkomo International Airport',
-		lat: -20.01740074157715,
-		long: 28.617900848388672
+		code : 'BUQ',
+		name : 'Joshua Mqabuko Nkomo International Airport',
+		lat  : -20.01740074157715,
+		long : 28.617900848388672
 	},
 	{ code: 'HRE', name: 'Harare International Airport', lat: -17.931800842285156, long: 31.09280014038086 },
 	{ code: 'FBM', name: 'Lubumbashi International Airport', lat: -11.5913000107, long: 27.5308990479 },
@@ -971,10 +971,10 @@ const airports = [
 	{ code: 'AHU', name: 'Cherif Al Idrissi Airport', lat: 35.177101135253906, long: -3.83951997756958 },
 	{ code: 'TTU', name: "Saniat R'mel Airport", lat: 35.594299316406, long: -5.320020198822 },
 	{
-		code: 'DKR',
-		name: 'Léopold Sédar Senghor International Airport',
-		lat: 14.739700317382812,
-		long: -17.49020004272461
+		code : 'DKR',
+		name : 'Léopold Sédar Senghor International Airport',
+		lat  : 14.739700317382812,
+		long : -17.49020004272461
 	},
 	{ code: 'ADD', name: 'Addis Ababa Bole International Airport', lat: 8.97789001465, long: 38.799301147499996 },
 	{ code: 'BJM', name: 'Bujumbura International Airport', lat: -3.3240199089050293, long: 29.318500518798828 },
@@ -1008,16 +1008,16 @@ const airports = [
 	{ code: 'NTE', name: 'Nantes Atlantique Airport', lat: 47.153198242200006, long: -1.61073005199 },
 	{ code: 'SXB', name: 'Strasbourg Airport', lat: 48.538299560546875, long: 7.628230094909668 },
 	{
-		code: 'SKG',
-		name: 'Thessaloniki Macedonia International Airport',
-		lat: 40.51969909667969,
-		long: 22.97089958190918
+		code : 'SKG',
+		name : 'Thessaloniki Macedonia International Airport',
+		lat  : 40.51969909667969,
+		long : 22.97089958190918
 	},
 	{
-		code: 'BUD',
-		name: 'Budapest Ferenc Liszt International Airport',
-		lat: 47.436901092499994,
-		long: 19.255599975599996
+		code : 'BUD',
+		name : 'Budapest Ferenc Liszt International Airport',
+		lat  : 47.436901092499994,
+		long : 19.255599975599996
 	},
 	{ code: 'CTA', name: 'Catania-Fontanarossa Airport', lat: 37.466801, long: 15.0664 },
 	{ code: 'MXP', name: 'Malpensa International Airport', lat: 45.6306, long: 8.72811 },
@@ -1047,10 +1047,10 @@ const airports = [
 	{ code: 'STI', name: 'Cibao International Airport', lat: 19.406099319458008, long: -70.60469818115234 },
 	{ code: 'GUA', name: 'La Aurora Airport', lat: 14.58329963684082, long: -90.52749633789062 },
 	{
-		code: 'SAP',
-		name: 'Ramón Villeda Morales International Airport',
-		lat: 15.45259952545166,
-		long: -87.92359924316406
+		code : 'SAP',
+		name : 'Ramón Villeda Morales International Airport',
+		lat  : 15.45259952545166,
+		long : -87.92359924316406
 	},
 	{ code: 'TGU', name: 'Toncontín International Airport', lat: 14.06089973449707, long: -87.21720123291016 },
 	{ code: 'MEX', name: 'Licenciado Benito Juarez International Airport', lat: 19.4363, long: -99.072098 },
@@ -1104,25 +1104,25 @@ const airports = [
 	{ code: 'AEP', name: 'Jorge Newbery Airpark', lat: -34.5592, long: -58.4156 },
 	{ code: 'COR', name: 'Ingeniero Ambrosio Taravella Airport', lat: -31.323600769, long: -64.2080001831 },
 	{
-		code: 'SLA',
-		name: 'Martin Miguel De Guemes International Airport',
-		lat: -24.856000900299996,
-		long: -65.4861984253
+		code : 'SLA',
+		name : 'Martin Miguel De Guemes International Airport',
+		lat  : -24.856000900299996,
+		long : -65.4861984253
 	},
 	{ code: 'NQN', name: 'Presidente Peron Airport', lat: -38.9490013123, long: -68.15570068359999 },
 	{ code: 'BRC', name: 'San Carlos De Bariloche Airport', lat: -41.1511993408, long: -71.1575012207 },
 	{ code: 'AJU', name: 'Santa Maria Airport', lat: -10.984000206, long: -37.0703010559 },
 	{
-		code: 'BEL',
-		name: 'Val de Cans/Júlio Cezar Ribeiro International Airport',
-		lat: -1.3792500495900002,
-		long: -48.4762992859
+		code : 'BEL',
+		name : 'Val de Cans/Júlio Cezar Ribeiro International Airport',
+		lat  : -1.3792500495900002,
+		long : -48.4762992859
 	},
 	{
-		code: 'BSB',
-		name: 'Presidente Juscelino Kubistschek International Airport',
-		lat: -15.86916732788086,
-		long: -47.920833587646484
+		code : 'BSB',
+		name : 'Presidente Juscelino Kubistschek International Airport',
+		lat  : -15.86916732788086,
+		long : -47.920833587646484
 	},
 	{ code: 'CNF', name: 'Tancredo Neves International Airport', lat: -19.62444305419922, long: -43.97194290161133 },
 	{ code: 'CWB', name: 'Afonso Pena Airport', lat: -25.5284996033, long: -49.1758003235 },
@@ -1135,10 +1135,10 @@ const airports = [
 	{ code: 'GIG', name: 'Rio Galeão – Tom Jobim International Airport', lat: -22.8099994659, long: -43.2505569458 },
 	{ code: 'GYN', name: 'Santa Genoveva Airport', lat: -16.631999969482422, long: -49.220699310302734 },
 	{
-		code: 'GRU',
-		name: 'Guarulhos - Governador André Franco Montoro International Airport',
-		lat: -23.435556411743164,
-		long: -46.47305679321289
+		code : 'GRU',
+		name : 'Guarulhos - Governador André Franco Montoro International Airport',
+		lat  : -23.435556411743164,
+		long : -46.47305679321289
 	},
 	{ code: 'IOS', name: 'Bahia - Jorge Amado Airport', lat: -14.815999984741, long: -39.033199310303 },
 	{ code: 'IMP', name: 'Prefeito Renato Moreira Airport', lat: -5.531290054321289, long: -47.459999084472656 },
@@ -1151,42 +1151,42 @@ const airports = [
 	{ code: 'NAT', name: 'Governador Aluízio Alves International Airport', lat: -5.768056, long: -35.376111 },
 	{ code: 'POA', name: 'Salgado Filho Airport', lat: -29.994400024414062, long: -51.1713981628418 },
 	{
-		code: 'REC',
-		name: 'Guararapes - Gilberto Freyre International Airport',
-		lat: -8.126489639282227,
-		long: -34.92359924316406
+		code : 'REC',
+		name : 'Guararapes - Gilberto Freyre International Airport',
+		lat  : -8.126489639282227,
+		long : -34.92359924316406
 	},
 	{ code: 'SDU', name: 'Santos Dumont Airport', lat: -22.910499572799996, long: -43.1631011963 },
 	{ code: 'RAO', name: 'Leite Lopes Airport', lat: -21.136388778686523, long: -47.776668548583984 },
 	{
-		code: 'SLZ',
-		name: 'Marechal Cunha Machado International Airport',
-		lat: -2.585360050201416,
-		long: -44.234100341796875
+		code : 'SLZ',
+		name : 'Marechal Cunha Machado International Airport',
+		lat  : -2.585360050201416,
+		long : -44.234100341796875
 	},
 	{ code: 'CGH', name: 'Congonhas Airport', lat: -23.626110076904297, long: -46.65638732910156 },
 	{
-		code: 'SSA',
-		name: 'Deputado Luiz Eduardo Magalhães International Airport',
-		lat: -12.9086112976,
-		long: -38.3224983215
+		code : 'SSA',
+		name : 'Deputado Luiz Eduardo Magalhães International Airport',
+		lat  : -12.9086112976,
+		long : -38.3224983215
 	},
 	{ code: 'VIX', name: 'Eurico de Aguiar Salles Airport', lat: -20.258056640625, long: -40.2863883972168 },
 	{ code: 'IQQ', name: 'Diego Aracena Airport', lat: -20.535200119018555, long: -70.1812973022461 },
 	{
-		code: 'SCL',
-		name: 'Comodoro Arturo Merino Benítez International Airport',
-		lat: -33.393001556396484,
-		long: -70.78579711914062
+		code : 'SCL',
+		name : 'Comodoro Arturo Merino Benítez International Airport',
+		lat  : -33.393001556396484,
+		long : -70.78579711914062
 	},
 	{ code: 'ANF', name: 'Cerro Moreno Airport', lat: -23.444499969482422, long: -70.44509887695312 },
 	{ code: 'CCP', name: 'Carriel Sur Airport', lat: -36.772701263427734, long: -73.06310272216797 },
 	{ code: 'LSC', name: 'La Florida Airport', lat: -29.916200637799996, long: -71.1995010376 },
 	{
-		code: 'GYE',
-		name: 'José Joaquín de Olmedo International Airport',
-		lat: -2.1574199199699997,
-		long: -79.88359832760001
+		code : 'GYE',
+		name : 'José Joaquín de Olmedo International Airport',
+		lat  : -2.1574199199699997,
+		long : -79.88359832760001
 	},
 	{ code: 'UIO', name: 'Mariscal Sucre International Airport', lat: -0.129166666667, long: -78.3575 },
 	{ code: 'ASU', name: 'Silvio Pettirossi International Airport', lat: -25.239999771118164, long: -57.52000045776367 },
@@ -1214,32 +1214,32 @@ const airports = [
 	{ code: 'LPB', name: 'El Alto International Airport', lat: -16.5132999420166, long: -68.19229888916016 },
 	{ code: 'VVI', name: 'Viru Viru International Airport', lat: -17.644800186157227, long: -63.135398864746094 },
 	{
-		code: 'PCL',
-		name: 'Cap FAP David Abenzur Rengifo International Airport',
-		lat: -8.37794017791748,
-		long: -74.57430267333984
+		code : 'PCL',
+		name : 'Cap FAP David Abenzur Rengifo International Airport',
+		lat  : -8.37794017791748,
+		long : -74.57430267333984
 	},
 	{ code: 'LIM', name: 'Jorge Chávez International Airport', lat: -12.0219, long: -77.114304 },
 	{ code: 'TBP', name: 'Capitan FAP Pedro Canga Rodriguez Airport', lat: -3.55253005027771, long: -80.38140106201172 },
 	{
-		code: 'IQT',
-		name: 'Coronel FAP Francisco Secada Vignetta International Airport',
-		lat: -3.7847399711608887,
-		long: -73.30879974365234
+		code : 'IQT',
+		name : 'Coronel FAP Francisco Secada Vignetta International Airport',
+		lat  : -3.7847399711608887,
+		long : -73.30879974365234
 	},
 	{ code: 'AQP', name: 'Rodríguez Ballón International Airport', lat: -16.3411006927, long: -71.5830993652 },
 	{
-		code: 'TCQ',
-		name: 'Coronel FAP Carlos Ciriani Santa Rosa International Airport',
-		lat: -18.053300857500002,
-		long: -70.2758026123
+		code : 'TCQ',
+		name : 'Coronel FAP Carlos Ciriani Santa Rosa International Airport',
+		lat  : -18.053300857500002,
+		long : -70.2758026123
 	},
 	{ code: 'PEM', name: 'Padre Aldamiz International Airport', lat: -12.6135997772, long: -69.2285995483 },
 	{
-		code: 'CUZ',
-		name: 'Alejandro Velasco Astete International Airport',
-		lat: -13.535699844400002,
-		long: -71.9387969971
+		code : 'CUZ',
+		name : 'Alejandro Velasco Astete International Airport',
+		lat  : -13.535699844400002,
+		long : -71.9387969971
 	},
 	{ code: 'CCS', name: 'Simón Bolívar International Airport', lat: 10.6031169891, long: -66.9905853271 },
 	{ code: 'SJU', name: 'Luis Munoz Marin International Airport', lat: 18.4393997192, long: -66.0018005371 },
@@ -1283,10 +1283,10 @@ const airports = [
 	{ code: 'AJL', name: 'Lengpui Airport', lat: 23.840599060099997, long: 92.6196975708 },
 	{ code: 'IXB', name: 'Bagdogra Airport', lat: 26.68120002746582, long: 88.32859802246094 },
 	{
-		code: 'CCU',
-		name: 'Netaji Subhash Chandra Bose International Airport',
-		lat: 22.654699325561523,
-		long: 88.44670104980469
+		code : 'CCU',
+		name : 'Netaji Subhash Chandra Bose International Airport',
+		lat  : 22.654699325561523,
+		long : 88.44670104980469
 	},
 	{ code: 'IMF', name: 'Imphal Airport', lat: 24.7600002289, long: 93.896697998 },
 	{ code: 'DIB', name: 'Dibrugarh Airport', lat: 27.4839000702, long: 95.0168991089 },
@@ -1334,10 +1334,10 @@ const airports = [
 	{ code: 'PER', name: 'Perth International Airport', lat: -31.94029998779297, long: 115.96700286865234 },
 	{ code: 'CBR', name: 'Canberra International Airport', lat: -35.30690002441406, long: 149.19500732421875 },
 	{
-		code: 'SYD',
-		name: 'Sydney Kingsford Smith International Airport',
-		lat: -33.94609832763672,
-		long: 151.177001953125
+		code : 'SYD',
+		name : 'Sydney Kingsford Smith International Airport',
+		lat  : -33.94609832763672,
+		long : 151.177001953125
 	},
 	{ code: 'PEK', name: 'Beijing Capital International Airport', lat: 40.080101013183594, long: 116.58499908447266 },
 	{ code: 'CAN', name: 'Guangzhou Baiyun International Airport', lat: 23.39240074157715, long: 113.29900360107422 },
@@ -1376,10 +1376,10 @@ const airports = [
 	{ code: 'EWR', name: 'Newark Liberty International Airport', lat: 40.692501068115234, long: -74.168701171875 },
 	{ code: 'DCA', name: 'Ronald Reagan Washington National Airport', lat: 38.8521, long: -77.037697 },
 	{
-		code: 'IAH',
-		name: 'George Bush Intercontinental Houston Airport',
-		lat: 29.984399795532227,
-		long: -95.34140014648438
+		code : 'IAH',
+		name : 'George Bush Intercontinental Houston Airport',
+		lat  : 29.984399795532227,
+		long : -95.34140014648438
 	},
 	{ code: 'CAE', name: 'Columbia Metropolitan Airport', lat: 33.93880081176758, long: -81.11949920654297 },
 	{ code: 'MIA', name: 'Miami International Airport', lat: 25.79319953918457, long: -80.29060363769531 },
@@ -1397,10 +1397,10 @@ const airports = [
 	{ code: 'AUS', name: 'Austin Bergstrom International Airport', lat: 30.194499969482422, long: -97.6698989868164 },
 	{ code: 'TYS', name: 'McGhee Tyson Airport', lat: 35.81100082, long: -83.9940033 },
 	{
-		code: 'ATL',
-		name: 'Hartsfield Jackson Atlanta International Airport',
-		lat: 33.63669967651367,
-		long: -84.4281005859375
+		code : 'ATL',
+		name : 'Hartsfield Jackson Atlanta International Airport',
+		lat  : 33.63669967651367,
+		long : -84.4281005859375
 	},
 	{ code: 'LGA', name: 'La Guardia Airport', lat: 40.77719879, long: -73.87259674 },
 	{ code: 'BTV', name: 'Burlington International Airport', lat: 44.471900939899996, long: -73.15329742429999 },
@@ -1412,10 +1412,10 @@ const airports = [
 	{ code: 'SAN', name: 'San Diego International Airport', lat: 32.7336006165, long: -117.190002441 },
 	{ code: 'CRP', name: 'Corpus Christi International Airport', lat: 27.77039909362793, long: -97.5011978149414 },
 	{
-		code: 'SJC',
-		name: 'Norman Y. Mineta San Jose International Airport',
-		lat: 37.36259841918945,
-		long: -121.92900085449219
+		code : 'SJC',
+		name : 'Norman Y. Mineta San Jose International Airport',
+		lat  : 37.36259841918945,
+		long : -121.92900085449219
 	},
 	{ code: 'DEN', name: 'Denver International Airport', lat: 39.861698150635, long: -104.672996521 },
 	{ code: 'PHL', name: 'Philadelphia International Airport', lat: 39.87189865112305, long: -75.24109649658203 },
@@ -1424,22 +1424,22 @@ const airports = [
 	{ code: 'BDL', name: 'Bradley International Airport', lat: 41.9388999939, long: -72.68319702149999 },
 	{ code: 'ORD', name: "Chicago O'Hare International Airport", lat: 41.97859955, long: -87.90480042 },
 	{
-		code: 'BWI',
-		name: 'Baltimore/Washington International Thurgood Marshall Airport',
-		lat: 39.17539978,
-		long: -76.66829681
+		code : 'BWI',
+		name : 'Baltimore/Washington International Thurgood Marshall Airport',
+		lat  : 39.17539978,
+		long : -76.66829681
 	},
 	{
-		code: 'MSP',
-		name: 'Minneapolis-St Paul International/Wold-Chamberlain Airport',
-		lat: 44.881999969499994,
-		long: -93.22180175780001
+		code : 'MSP',
+		name : 'Minneapolis-St Paul International/Wold-Chamberlain Airport',
+		lat  : 44.881999969499994,
+		long : -93.22180175780001
 	},
 	{
-		code: 'MSY',
-		name: 'Louis Armstrong New Orleans International Airport',
-		lat: 29.99340057373047,
-		long: -90.25800323486328
+		code : 'MSY',
+		name : 'Louis Armstrong New Orleans International Airport',
+		lat  : 29.99340057373047,
+		long : -90.25800323486328
 	},
 	{ code: 'CLT', name: 'Charlotte Douglas International Airport', lat: 35.2140007019043, long: -80.94309997558594 },
 	{ code: 'LAS', name: 'McCarran International Airport', lat: 36.08010101, long: -115.1520004 },
@@ -1466,10 +1466,10 @@ const airports = [
 	{ code: 'LJG', name: 'Lijiang Airport', lat: 26.6800003052, long: 100.246002197 },
 	{ code: 'GSP', name: 'Greenville Spartanburg International Airport', lat: 34.8956985474, long: -82.2189025879 },
 	{
-		code: 'BMI',
-		name: 'Central Illinois Regional Airport at Bloomington-Normal',
-		lat: 40.47710037,
-		long: -88.91590118
+		code : 'BMI',
+		name : 'Central Illinois Regional Airport at Bloomington-Normal',
+		lat  : 40.47710037,
+		long : -88.91590118
 	},
 	{ code: 'GPT', name: 'Gulfport Biloxi International Airport', lat: 30.40730094909668, long: -89.07009887695312 },
 	{ code: 'FWA', name: 'Fort Wayne International Airport', lat: 40.97850037, long: -85.19509888 },
@@ -1508,19 +1508,19 @@ const airports = [
 	{ code: 'OMH', name: 'Urmia Airport', lat: 37.6680984497, long: 45.0686988831 },
 	{ code: 'EYP', name: 'El Yopal Airport', lat: 5.31911, long: -72.384 },
 	{
-		code: 'CJA',
-		name: 'Mayor General FAP Armando Revoredo Iglesias Airport',
-		lat: -7.1391801834106445,
-		long: -78.4894027709961
+		code : 'CJA',
+		name : 'Mayor General FAP Armando Revoredo Iglesias Airport',
+		lat  : -7.1391801834106445,
+		long : -78.4894027709961
 	},
 	{ code: 'VIJ', name: 'Virgin Gorda Airport', lat: 18.446399688720703, long: -64.42749786376953 },
 	{ code: 'KVD', name: 'Ganja Airport', lat: 40.737701416015625, long: 46.31760025024414 },
 	{ code: 'LBD', name: 'Khudzhand Airport', lat: 40.21540069580078, long: 69.6947021484375 },
 	{
-		code: 'GAU',
-		name: 'Lokpriya Gopinath Bordoloi International Airport',
-		lat: 26.10610008239746,
-		long: 91.58589935302734
+		code : 'GAU',
+		name : 'Lokpriya Gopinath Bordoloi International Airport',
+		lat  : 26.10610008239746,
+		long : 91.58589935302734
 	},
 	{ code: 'BCI', name: 'Barcaldine Airport', lat: -23.5652999878, long: 145.307006836 },
 	{ code: 'GLT', name: 'Gladstone Airport', lat: -23.869699, long: 151.223007 },
