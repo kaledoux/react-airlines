@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Table from './components/Table';
 import './App.css';
 import data from './data';
@@ -18,7 +18,7 @@ const App = () => {
 				<h1 className="title">Airline Routes</h1>
 			</header>
 			<section>
-				<Table className="routes-table" columns={columns} rows={data.routes} format={formatValue} />
+				<Table className="routes-table" columns={columns} rows={data.routes} format={formatValue} pageLimit={10} />
 			</section>
 		</div>
 	);
