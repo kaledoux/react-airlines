@@ -6,9 +6,9 @@ const Select = ({ options = [], valueKey = '', titleKey = '', allTitle = 'all', 
 			<option key="all" value="all">
 				{allTitle}
 			</option>
-			{options.map((airline) => (
-				<option key={airline[valueKey]} value={airline[valueKey]}>
-					{airline[titleKey]}
+			{options.map((option) => (
+				<option key={option[valueKey]} value={option[valueKey]}>
+					{option[titleKey]}
 				</option>
 			))}
 		</select>

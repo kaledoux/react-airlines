@@ -1558,4 +1558,18 @@ export const getAirportByCode = (code) => {
 	const airport = airports.find((airport) => airport.code === code);
 	return airport.name;
 };
+
+export const sortAirports = (airportList) => {
+	return airportList.sort((a, b) => {
+		let nameA = a.name.toLowerCase();
+		let nameB = b.name.toLowerCase();
+		if (nameA < nameB) {
+			return -1;
+		}
+		if (nameA > nameB) {
+			return 1;
+		}
+		return 0;
+	});
+};
 export default { routes, airlines, airports };
