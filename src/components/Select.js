@@ -10,7 +10,7 @@ const Select = ({
 	onSelect
 }) => {
 	return (
-		<select value={value} onChange={(e) => onSelect(e)}>
+		<select class="form-select" value={value} onChange={(e) => onSelect(e)}>
 			<option key="all" value="all">
 				{allTitle}
 			</option>

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getAirlineById, getAirportByCode } from '../data';
+import { Table, ButtonGroup, Button } from 'react-bootstrap';
 
-const Table = ({ columns, rows, pageLimit = 25 }) => {
+const RouteTable = ({ columns, rows, pageLimit = 25 }) => {
 	const perPage = pageLimit;
 	const [ pageIndex, setPageIndex ] = useState(0);
 	const [ nextButtonDisabled, setNextButton ] = useState(false);
@@ -27,9 +28,9 @@ const Table = ({ columns, rows, pageLimit = 25 }) => {
 	};
 	return (
 		<div>
-			<table>
+			<Table striped bordered hover variant="dark">
 				<thead>
-					<tr>{columns.map((column) => <td key={column.name}>{column.name}</td>)}</tr>
+					<tr>{columns.map((column) => <th key={column.name}>{column.name}</th>)}</tr>
 				</thead>
 				<tbody>
 					{rows.slice(pageIndex, pageIndex + perPage).map((route, ind) => {
@@ -42,28 +43,25 @@ const Table = ({ columns, rows, pageLimit = 25 }) => {
 						);
 					})}
 				</tbody>
-			</table>
-			<button
-				style={prevButtonDisabled ? { pointerEvents: 'none' } : {}}
-				id="prev_page"
-				onClick={() => handlePreviousButton()}
-			>
-				Previous Page
-			</button>
-			<button
-				style={nextButtonDisabled ? { pointerEvents: 'none' } : {}}
-				id="next_page"
-				onClick={() => handleNextButton()}
-			>
-				Next Page
-			</button>
+			</Table>
+			<ButtonGroup size="lg" className="mb-2">
+				<Button
+					style={prevButtonDisabled ? { pointerEvents: 'none' } : {}}
+					id="prev_page"
+					onClick={() => handlePreviousButton()}
+				>
+					Previous Page
+				</Button>
+				<Button
+					style={nextButtonDisabled ? { pointerEvents: 'none' } : {}}
+					id="next_page"
+					onClick={() => handleNextButton()}
+				>
+					Next Page
+				</Button>
+			</ButtonGroup>
 		</div>
 	);
 };
 
-export default Table;
-
-// tbody
-// map out routes from n to n + 25
-//   if at starting index, disable prev button
-//   if collection is less than 25, disable next button
+export default RouteTable;

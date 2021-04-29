@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import Table from './components/Table';
+import RouteTable from './components/RouteTable';
 import Select from './components/Select';
 import Map from './components/Map';
 import './App.css';
 import data, { sortAirports } from './data';
+import { Button } from 'react-bootstrap';
 
 const App = () => {
 	const columns = [
@@ -60,27 +61,36 @@ const App = () => {
 			<section>
 				<Map routes={filteredRoutes} airports={filteredAirports} />
 			</section>
-			<Select
-				options={filteredAirlines}
-				valueKey="id"
-				titleKey="name"
-				allTitle="All Airlines"
-				value={airline}
-				enableKey="active"
-				onSelect={handleAirlineSelect}
-			/>
-			<Select
-				options={filteredAirports}
-				valueKey="code"
-				titleKey="name"
-				allTitle="All Airports"
-				value={airport}
-				enableKey="active"
-				onSelect={handleAirportSelect}
-			/>
-			<button onClick={() => handleResetFilters()}>Clear Filters</button>
+			<section className="filters">
+				<h3>Filter flights by airline and/or airport!</h3>
+				<p>
+					Select flights on:
+					<Select
+						options={filteredAirlines}
+						valueKey="id"
+						titleKey="name"
+						allTitle="All Airlines"
+						value={airline}
+						enableKey="active"
+						onSelect={handleAirlineSelect}
+					/>
+				</p>
+				<p>
+					Travelling <i>to</i> or <i>from</i>:
+					<Select
+						options={filteredAirports}
+						valueKey="code"
+						titleKey="name"
+						allTitle="All Airports"
+						value={airport}
+						enableKey="active"
+						onSelect={handleAirportSelect}
+					/>{' '}
+				</p>
+				<Button onClick={() => handleResetFilters()}>Clear Filters</Button>
+			</section>
 			<section>
-				<Table className="routes-table" columns={columns} rows={filteredRoutes} pageLimit={25} />
+				<RouteTable className="routes-table" columns={columns} rows={filteredRoutes} pageLimit={25} />
 			</section>
 		</div>
 	);

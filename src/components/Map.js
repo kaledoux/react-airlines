@@ -1,4 +1,5 @@
 import React from 'react';
+import { Figure } from 'react-bootstrap';
 
 const Map = ({ routes, airports }) => {
 	return (
@@ -18,7 +19,6 @@ const Map = ({ routes, airports }) => {
 					const source = airports.find((airport) => airport.code === route.src);
 					const destination = airports.find((airport) => airport.code === route.dest);
 					const [ x1, y1, x2, y2 ] = [ source.long, source.lat, destination.long, destination.lat ];
-					// const keyCode = Math.floor(Math.random() * 100000000);
 					const keyCode = `${route.airline}${source.code}${destination.code}`;
 
 					return (
