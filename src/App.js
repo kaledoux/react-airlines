@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Table from './components/Table';
 import Select from './components/Select';
+import Map from './components/Map';
 import './App.css';
 import data, { sortAirports } from './data';
 
@@ -56,6 +57,9 @@ const App = () => {
 			<header className="header">
 				<h1 className="title">Airline Routes</h1>
 			</header>
+			<section>
+				<Map routes={filteredRoutes} airports={filteredAirports} />
+			</section>
 			<Select
 				options={filteredAirlines}
 				valueKey="id"
