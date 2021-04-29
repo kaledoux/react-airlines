@@ -1,5 +1,4 @@
 import React from 'react';
-import { Figure } from 'react-bootstrap';
 
 const Map = ({ routes, airports }) => {
 	return (
@@ -23,10 +22,10 @@ const Map = ({ routes, airports }) => {
 
 					return (
 						<g key={keyCode}>
-							<circle className="source" cx={x1} cy={y1}>
+							<circle className="source" cx={x1} cy={y1} r={0.8}>
 								<title />
 							</circle>
-							<circle className="destination" cx={x2} cy={y2}>
+							<circle className="destination" cx={x2} cy={y2} r={0.8}>
 								<title />
 							</circle>
 							<path d={`M${x1} ${y1} L ${x2} ${y2}`} />

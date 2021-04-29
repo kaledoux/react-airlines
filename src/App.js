@@ -76,7 +76,7 @@ const App = () => {
 					/>
 				</p>
 				<p>
-					Travelling <i>to</i> or <i>from</i>:
+					Travelling <i style={{ color: 'red' }}>to</i> or <i style={{ color: 'green' }}>from</i>:
 					<Select
 						options={filteredAirports}
 						valueKey="code"
