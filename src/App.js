@@ -25,23 +25,23 @@ const App = () => {
 	};
 
 	const airlinesToShow = filterRoutes(airline, airport);
-	// airline !== 'all' || airport !== 'all'
-	// 	? data.routes.filter((route) => String(route.airline) === airline && route.src === airport)
-	// 	: data.routes;
 
 	const formatValue = (_, value) => value;
 
 	const handleAirlineSelect = (e) => {
-		console.log('handle select airlines firing');
 		setAirline(e.target.value);
 	};
 	const airlines = data.airlines;
 
 	const handleAirportSelect = (e) => {
-		console.log('handle select airports firing');
 		setAirport(e.target.value);
 	};
 	const airports = sortAirports(data.airports);
+
+	const handleResetFilters = () => {
+		setAirline('all');
+		setAirport('all');
+	};
 
 	return (
 		<div className="app">
@@ -53,7 +53,7 @@ const App = () => {
 				valueKey="id"
 				titleKey="name"
 				allTitle="All Airlines"
-				value=""
+				value={airline}
 				onSelect={handleAirlineSelect}
 			/>
 			<Select
@@ -61,9 +61,10 @@ const App = () => {
 				valueKey="code"
 				titleKey="name"
 				allTitle="All Airports"
-				value=""
+				value={airport}
 				onSelect={handleAirportSelect}
 			/>
+			<button onClick={() => handleResetFilters()}>Clear Filters</button>
 			<section>
 				<Table className="routes-table" columns={columns} rows={airlinesToShow} format={formatValue} pageLimit={10} />
 			</section>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Select = ({ options = [], valueKey = '', titleKey = '', allTitle = 'all', value = 'all', onSelect }) => {
 	return (
-		<select onClick={(e) => onSelect(e)}>
+		<select value={value} onChange={(e) => onSelect(e)}>
 			<option key="all" value="all">
 				{allTitle}
 			</option>
