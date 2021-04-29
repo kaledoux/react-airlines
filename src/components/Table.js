@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getAirlineById, getAirportByCode } from '../data';
 
-const Table = ({ columns, rows, formatValue, pageLimit = 25 }) => {
+const Table = ({ columns, rows, pageLimit = 25 }) => {
 	const perPage = pageLimit;
 	const [ pageIndex, setPageIndex ] = useState(0);
 	const [ nextButtonDisabled, setNextButton ] = useState(false);

@@ -10,6 +10,7 @@ const App = () => {
 		{ name: 'Source Airport', property: 'src' },
 		{ name: 'Destination Airport', property: 'dest' }
 	];
+
 	const [ airline, setAirline ] = useState('all');
 	const [ airport, setAirport ] = useState('all');
 
@@ -19,24 +20,31 @@ const App = () => {
 			routes = routes.filter((route) => String(route.airline) === airline);
 		}
 		if (airport !== 'all') {
-			routes = routes.filter((route) => route.src === airport);
+			routes = routes.filter((route) => route.src === airport || route.dest === airport);
 		}
 		return routes;
 	};
 
-	const airlinesToShow = filterRoutes(airline, airport);
+	const filteredRoutes = filterRoutes(airline, airport);
 
-	const formatValue = (_, value) => value;
+	const filteredAirlines = data.airlines.map((airline) => {
+		const active = !!filteredRoutes.find((route) => route.airline === airline.id);
+		return Object.assign({}, airline, { active });
+	});
+
+	const airports = sortAirports(data.airports);
+	const filteredAirports = airports.map((airport) => {
+		const active = !!filteredRoutes.find((route) => route.src === airport.code || route.dest === airport.code);
+		return Object.assign({}, airport, { active });
+	});
 
 	const handleAirlineSelect = (e) => {
 		setAirline(e.target.value);
 	};
-	const airlines = data.airlines;
 
 	const handleAirportSelect = (e) => {
 		setAirport(e.target.value);
 	};
-	const airports = sortAirports(data.airports);
 
 	const handleResetFilters = () => {
 		setAirline('all');
@@ -49,24 +57,26 @@ const App = () => {
 				<h1 className="title">Airline Routes</h1>
 			</header>
 			<Select
-				options={airlines}
+				options={filteredAirlines}
 				valueKey="id"
 				titleKey="name"
 				allTitle="All Airlines"
 				value={airline}
+				enableKey="active"
 				onSelect={handleAirlineSelect}
 			/>
 			<Select
-				options={airports}
+				options={filteredAirports}
 				valueKey="code"
 				titleKey="name"
 				allTitle="All Airports"
 				value={airport}
+				enableKey="active"
 				onSelect={handleAirportSelect}
 			/>
 			<button onClick={() => handleResetFilters()}>Clear Filters</button>
 			<section>
-				<Table className="routes-table" columns={columns} rows={airlinesToShow} format={formatValue} pageLimit={10} />
+				<Table className="routes-table" columns={columns} rows={filteredRoutes} pageLimit={25} />
 			</section>
 		</div>
 	);
